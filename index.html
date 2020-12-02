@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>Mighty &mdash; Website Template by Colorlib</title>
+  <title>Creative Path &mdash; Home</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -516,6 +516,22 @@
       </div>
     </div>
 
+
+
+    
+    <div class="site-section p-2" style="background-image: url('img/banner2.png');background-repeat: no-repeat;background-position: center center;  ">
+      <div class="container col-md-8 m-auto">
+    <div class="owl-carousel">
+      
+      <div class="item" style=" border-radius: 20%;background-color: white; height: 100%; width: 100%; " >  <img src="img/icon1.png" height="50%"  class="p-5"  alt=""> </div>
+      <div class="item" style=" border-radius: 20%;background-color: white; height: 100%; width: 100%; " >  <img src="img/netsoft.png" height="50%"  class="p-5"  alt=""> </div>
+      
+      
+    </div>
+    </div>
+    </div>
+
+
     <footer class="site-footer">
       <div class="container">
         <div class="row">
@@ -591,16 +607,27 @@
   <script src="js/main.js"></script>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
   <script>
-    window.dataLayer = window.dataLayer || [];
-
-    function gtag() {
-      dataLayer.push(arguments);
+    $(document).ready(function(){
+      $('.owl-carousel').owlCarousel({
+        autoplay:true,
+        autoplayTimeout:5000,
+        center: true,
+        loop:true,
+        margin:10,
+    responsive:{
+        0:{
+            items:2
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:5
+        }
     }
-    gtag('js', new Date());
-
-    gtag('config', 'UA-23581568-13');
+})
+});
   </script>
 
 </body>
