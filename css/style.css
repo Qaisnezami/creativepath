@@ -311,11 +311,17 @@ h1, h2, h4, h5,
     padding: 4em 0; }
 
 .site-footer {
-  padding: 4em 0;
-  background: #efefef; }
+  position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  
+
+
+ }
   @media (min-width: 768px) {
     .site-footer {
-      padding: 8em 0; } }
+      padding: 5em 0px 0 0; } }
   .site-footer .border-top {
     border-top: 1px solid rgba(255, 255, 255, 0.1) !important; }
   .site-footer p {
@@ -948,7 +954,15 @@ h1, h2, h4, h5,
    
    @media (min-width: 576px) {
     
+    .site-footer {
+      position: relative;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center ;
+      
     
+    
+     }
 
 }
 
@@ -996,14 +1010,36 @@ h1, h2, h4, h5,
     width: 8% !important;
     overflow: inherit !important;
 } */
+
+.site-footer {
+  position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top  ;
+  
+
+
+ }
     
 }
+
+.back-to-top {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  display: none;
+}
+
 
 /* The given screen size or smaller */
 
 /* Extra small devices (portrait phones)*/
 
 @media (max-width: 575px) {
+  .site-footer {
+    padding: 5em 0; } 
+  
+  
   .services-text {
       
     position: relative !important;
