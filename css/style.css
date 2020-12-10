@@ -900,6 +900,7 @@ h1, h2, h4, h5,
    {
      height: 50%;
      width: 80%;
+    
    }
 
 
@@ -1064,7 +1065,10 @@ h1, h2, h4, h5,
 @media (max-width: 1199px) {}
 
 
-
+.quote{
+  position: absolute;
+  top: 200px;
+}
 
 
 
